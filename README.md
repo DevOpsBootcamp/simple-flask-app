@@ -1,22 +1,20 @@
-Python Flask App
-================
-**Thiiiis** far above ``hello world``.
+A Tinsy Winsy Python Flask App
+==============================
 
 Installation/Usage
 ------------------
 
 ```
-$ sudo apt install git
-$ git clone $THISURL
-$ cd $DIRECTORYNAME
-$ virtualenv $VIRTUALENVNAME
-$ source $VIRTUALENVNAME/bin/activate
-$ pip install -r requirements.txt   # installs the python dependencies
-$ ./script.py   # Starts the webapp
+$ git clone https://github.com/DevOpsBootcamp/tinsy-flask-app.git
+$ cd tinsy-flask-app
+$ virtualenv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+$ ./script.py
 * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
 ```
 
-Open your browser to http://daycamp.osuosl.org:$YOURHTTPPORT
+Open your browser to ``http://daycamp.osuosl.org:<Your VM's HTTP Port>``
 
 Woooo~  you did it, now we get to hacking!
 
