@@ -20,7 +20,7 @@ class TinsyAppTestCase(unittest.TestCase):
 
     def test_dogs_page(self):
         rv = self.app.get('/dogs/')
-        # Add Test Code Here
+        # Add Your Test Code Here
         self.assertTrue(False)  # Remove this test
 
 unittest.main()

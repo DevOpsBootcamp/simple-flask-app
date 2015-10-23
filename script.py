@@ -35,7 +35,7 @@ def render_dogs_page():
     """
     Returns random dog from 'dogs' array above.
     """
-    ### PUT CODE HERE
+    ### PUT DOGS ENDPOINT CODE HERE
     pass # Remove this line when you write your own code
 
 

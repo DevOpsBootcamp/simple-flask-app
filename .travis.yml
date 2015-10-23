@@ -10,4 +10,4 @@ matrix:
     allow_failures:
         - python: asdfasdf
     fast_finish: true
-script: test.py
+script: python test.py
