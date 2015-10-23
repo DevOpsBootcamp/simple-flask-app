@@ -12,10 +12,11 @@ def index():
     """
     Returns
     """
-    url_for('static', filename='x.gif')
+    img_url = url_for('static', filename='x.gif')
     now = datetime.now()
     return render_template('index.html',\
-                           time=now)
+                           time=now,\
+                           img_url=img_url)
 
 
 @app.route('/user/<username>')
@@ -23,13 +24,19 @@ def render_username(username):
     """
     Returns a specified page at the url /user/<username>
     """
-    url_for('static', filename='hal.jpg')
-    return render_template('user.html', username=username)
+    img_url = url_for('static', filename='hal.jpg')
+    return render_template('user.html',\
+                           username=username,\
+                           img_url=img_url)
 
-
-# TODO: Add another endpoint `/dog/` which sends a message with a random dog..
-# It should render a new template 'dogs.html' which is passed a 'dog'
-# variable.
+# TODO: Add '/dogs/' endpoint that returns random dog from list of dogs.
+@app.route('/dogs/')
+def render_dogs_page():
+    """
+    Returns random dog from 'dogs' array above.
+    """
+    ### PUT CODE HERE
+    pass # Remove this line when you write your own code
 
 
 if __name__ == "__main__":
