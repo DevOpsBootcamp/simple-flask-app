@@ -4,15 +4,12 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-dogs = ['Doberman', 'Golden Retriever', 'Snoop', 'Beagle', 'Bull Terrier',\
-        'Akita', 'Siberian Husky', 'Pit Bull', 'Pug', 'Black Lab']
 
 @app.route('/')
 def index():
     """
     Returns
     """
-    img_url = url_for('static', filename='x.gif')
     now = datetime.now()
     return render_template('index.html',\
                            time=now,\
@@ -40,4 +37,4 @@ def render_dogs_page():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080, debug=True)
+	app.run(host='0.0.0.0', port=8080, debug=True)
